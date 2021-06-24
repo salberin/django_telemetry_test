@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+requests = ">=2.18.4"
+gunicorn = "*"
+gevent = "*"
+Django = "< 3.3.0"
+fcm-django = "*"
+
+opentelemetry-api = "*"
+opentelemetry-sdk = "*"
+opentelemetry-instrumentation-requests = "==0.22b0"
+opentelemetry-instrumentation-django = "==0.22b0"
+opentelemetry-instrumentation-redis = "==0.22b0"
+
+opentelemetry-exporter-gcp-trace = "*"
+opentelemetry-propagator-gcp = "*"
+opentelemetry-resourcedetector-gcp = "==1.0.0a0"

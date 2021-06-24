@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  djangoopentelemetrytest:
+    image: djangoopentelemetrytest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+    volumes: 
+      - ./secrets:/var/run/secrets/
